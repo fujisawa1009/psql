@@ -46,7 +46,7 @@ docker compose exec db psql -U student -d practice
 | 項目 | 値 |
 |---|---|
 | Host | localhost |
-| Port | 5432 |
+| Port | 5433 |
 | User | student |
 | Password | student |
 | Database | practice |
