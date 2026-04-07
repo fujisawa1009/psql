@@ -1,0 +1,12 @@
+  # sql-practice/docker-compose.yml
+  services:
+    db:
+      image: postgres:16-alpine
+      ports:
+        - "5432:5432"
+      environment:
+        POSTGRES_USER: student
+        POSTGRES_PASSWORD: student
+        POSTGRES_DB: practice
+      volumes:
+        - ./init:/docker-entrypoint-initdb.d
